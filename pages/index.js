@@ -5,6 +5,7 @@ export default function Home() {
     <div className={styles.container}>
       <h1>Testing NextJS Auth0</h1>
       <h2>Another Line</h2>
+      <h2>Third line</h2>
     </div>
   )
 }
