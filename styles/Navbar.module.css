@@ -1,0 +1,7 @@
+.links {
+    margin-right: 1em;
+}
+
+.links:hover {
+    border-bottom: 2px solid #fff;
+}
