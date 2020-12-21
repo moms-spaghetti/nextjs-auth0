@@ -13,7 +13,6 @@ export default function Profile() {
   
     if (!loading && !session) return (
       <div>
-        <p>Access Denied</p>
         <Link href='/'>
           <a>Back to login</a>
         </Link>
