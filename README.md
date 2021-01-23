@@ -9,8 +9,7 @@ You can log into the site by signing in with a google account.
 ## Details
 
 Testing how to protect routes to private pages behind Auth0 authentication. Attempting to access other pages directly will reroute the user back to the login page. I used an npm package called next-auth to integrate auth0.\
-
-<br/><br/>
+<br/>
 
 ## Built With
 
