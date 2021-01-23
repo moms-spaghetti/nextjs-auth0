@@ -1,30 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS Auth0
+
+I created this using NextJS combined with Auth0 to testing various solutions for protecting our final project site behind authentication.\
+<br/>
+[View Demo](https://nextjs-auth0-i9wlpjq24.vercel.app/)\
+You can log into the site by signing in with a google account.
+<br/><br/>
+
+## Details
+
+Testing how to protect routes to private pages behind Auth0 authentication. Attempting to access other pages directly will reroute the user back to the login page. I used an npm package called next-auth to integrate auth0.\
+
+<br/><br/>
+
+## Built With
+
+- HTML
+- CSS
+- Javascript
+- NextJS
+- Next Auth
+- Auth0
+  <br/><br/>
 
 ## Getting Started
 
-First, run the development server:
+Clone the repo as instructed below and download npm modules.
+<br/><br/>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Download and install npm modules.
+An auth0 account.
+A .env.local file in the root folder
+<br/><br/>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Installation
 
-## Learn More
+1. Clone the repo
+   ```sh
+   git clone https://github.com/moms-spaghetti/nextjs_auth0.git
+   ```
+2. Download the required npm modules
+   ```sh
+   npm i
+   ```
+3. Create an auth0 account with a new single page application. Skip the screen which confirms what your application has been written in.
+4. Create a .env.local file in the root directory with the below entries. Fill in the details for each entry from your Auth0 account under the settings for your application.
+   ```sh
+   NEXT_PUBLIC_AUTH0_CLIENT_ID=
+   NEXT_PUBLIC_AUTH0_CLIENT_SECRET=
+   NEXT_PUBLIC_AUTH0_DOMAIN=
+   NEXT_PUBLIC_NEXTAUTH_URL=http://localhost:3000
+   ```
+5. Add the callback url to your application settings in Auth0
+   ```sh
+   http://localhost:3000/api/auth/callback/auth0
+   ```
+6. Start the application
+   ```sh
+   npm run dev
+   ```
+   <br/><br/>
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+After opening the page, click the login button to be redirected to Auth0 and log in using a google account. The protected pages will be accessible after log in.
+<br/><br/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Email](mailto:williamedwards36@aol.com)
+<br/><br/>
